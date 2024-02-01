@@ -1,0 +1,23 @@
+a {
+    color: white;
+}
+
+.application-nav, .application-actions {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.application-name {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.application-actions > * {
+    margin-right: 10px;
+}
+
+.application-actions > *:hover {
+    margin-bottom: 3px;
+    transition: margin-bottom 250ms ease;
+}

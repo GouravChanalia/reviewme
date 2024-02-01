@@ -1,0 +1,27 @@
+<div>
+  <mat-toolbar class="application-nav" color="primary">
+    <div class="application-name-container">
+      <span class="application-name">{{ application.name }}</span>
+      <span>crafted by&nbsp;</span>
+      <span>
+        <a [href]="application.repositoryLink" target="_blank"
+          >{{ application.developedBy }}
+        </a>
+      </span>
+    </div>
+    <div class="application-actions">
+      <button mat-mini-fab color="">
+        <mat-icon>search</mat-icon>
+      </button>
+      <a
+        mat-raised-button
+        color=""
+        routerLink="/login"
+        routerLinkActive="active"
+      >
+        Sign In
+      </a>
+    </div>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</div>
